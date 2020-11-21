@@ -1,0 +1,25 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>VRK API Reader App</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+    <h1>IBM Tech Task by Martin Majorov (2020.11.20)</h1>
+    <h2>Java Spring App</h2>
+    <h2>Requirements</h2>
+    <p>Create a rest api service which reads the data from this rest api endpoint: <i>https://www.vrk.lt/statiniai/puslapiai/rinkimai/rt.json</i></p>
+    <p>should return the election date, election name and election id. It should be possible to do the sorting of data by date by passing the parameter to the rest api.</p>
+    <h2>Implementation:</h2>
+    <p>This solution implements Java Spring Framework to acquire the date from the mentioned API.</p>
+    <p>The acquired data is filtered and sent to controller in JSON format.</p>
+    <p>The solution can be found by entering <i>/results</i> endpoint.</p>
+    <p><i>/results</i> endpoint sends back unsorted data.</p>
+    <p>To sort data you need to enter <i>sorted</i> parameter with value of 1 (/results?sorted=1)</p>
+    <p>If sorted=0 or not entered, /result endpoint always sends back unsorted JSON response.</p>
+</body>
+</html>
