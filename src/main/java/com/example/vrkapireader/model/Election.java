@@ -1,9 +1,9 @@
 package com.example.vrkapireader.model;
 
 public class Election {
-    int id;
-    String name;
-    String date;
+    private int id;
+    private String name;
+    private String date;
 
     public Election(int id, String name, String date) {
         this.id = id;
